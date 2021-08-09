@@ -59,15 +59,15 @@ body{
 
 
 .infos{
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
-
+    width: 100%;
+    display: flex;
 }
 
 
 .infos .temp,
 .infos .vento
 {
+    flex: 1;
     margin-top: 5px;
     text-align: center;
     font-size: 16px;

@@ -17,10 +17,20 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.res{
+    display: none;
+    border: 1px dashed black;
+    width: 250px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(34, 34, 34);
+}
+
 .formLocal #locClima{
     border-radius: 10px;
     text-indent: 10px;
-    height: 20px;
+    height: 40px;
     outline: none;
     width: 200px;
 }
@@ -28,26 +38,18 @@ body{
 .formLocal #procClima{
     outline:none;
     border-radius: 10px;
-    height: 30px;
     background-color: transparent;
     color: white;
     cursor: pointer;
+    border: solid 1px white;
+    height: 40px;
+    padding: 10px
 }
 
 .formLocal #procClima:hover{
     background-color: white;
     color: black;
     border: solid 1px black;
-}
-
-.res{
-    border: 1px dashed black;
-    width: 250px;
-    margin-top: 10px;
-    height: 250px;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: rgb(34, 34, 34);
 }
 
 .res .titLocal{
@@ -59,7 +61,6 @@ body{
 .infos{
     display:grid;
     grid-template-columns: repeat(2, 1fr);
-    max-width: 1000px;
 
 }
 
@@ -90,7 +91,7 @@ body{
 }
 
 .infos .temp img{
-    
+
 }
 
 .infoVento span{
@@ -102,7 +103,7 @@ body{
     width: 50%;
     border-radius: 50%;
     border: solid 1px white;
-    height: 50%;
+    height: 40%;
     margin: auto;
     padding-top: 25px;
     padding-left: 25px;
@@ -114,4 +115,13 @@ body{
     transform-origin: left;
     background-color: white;
     height: 1px;
+}
+
+.temp img{
+    width: 50%;
+    height: 50%;
+}
+
+.aviso{
+    margin-top: 10px;
 }

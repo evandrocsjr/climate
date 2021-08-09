@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
 body{
     margin: 0 auto;
     width: 100vw;
@@ -6,7 +12,106 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(41, 41, 41);
+    background-color: rgb(68, 68, 68);
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+.formLocal #locClima{
+    border-radius: 10px;
+    text-indent: 10px;
+    height: 20px;
+    outline: none;
+    width: 200px;
+}
+
+.formLocal #procClima{
+    outline:none;
+    border-radius: 10px;
+    height: 30px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.formLocal #procClima:hover{
+    background-color: white;
+    color: black;
+    border: solid 1px black;
+}
+
+.res{
+    border: 1px dashed black;
+    width: 250px;
+    margin-top: 10px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(34, 34, 34);
+}
+
+.res .titLocal{
+    text-align:center;
+    margin: 5px;
+}
+
+
+.infos{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1000px;
+
+}
+
+
+.infos .temp,
+.infos .vento
+{
+    margin-top: 5px;
+    text-align: center;
+    font-size: 16px;
+    color:rgb(56, 56, 56);
+    font-weight: bold
+}
+
+.infos .infoTemp,
+.infos .infoVento
+{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+.infoTemp sup{
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.infos .temp img{
+    
+}
+
+.infoVento span{
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.ventoArea{
+    width: 50%;
+    border-radius: 50%;
+    border: solid 1px white;
+    height: 50%;
+    margin: auto;
+    padding-top: 25px;
+    padding-left: 25px;
+    margin-top: 20px
+}
+
+.ventoPonto{
+    width: 15px;
+    transform-origin: left;
+    background-color: white;
+    height: 1px;
+}
